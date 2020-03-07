@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jumping-Button</title>
+</head>
+<body>
+    <br>
+    <form method="get" action="{{url_for('the_question')}}">
+        <label>Give me a question<br>
+        <textarea rows="10" cols="40" name="comment" required></textarea></label><br>
+        <label>Set the only answer:<br>
+        <select id="answer" name = "answer">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select></label>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
